@@ -76,7 +76,7 @@ describe(`creator test`, () => {
   })
 })
 
-describe(`mkdirp test`, () => {
+describe(`mkdirp promise test`, () => {
   it(`should create directories recursively`, function (done) {
 
     const pathName = '1/2/3/4/5/7'
@@ -85,5 +85,19 @@ describe(`mkdirp test`, () => {
       done()
       console.log('Please, remove next folder manually: ' + pathName)
     }).catch(done)
+  })
+})
+
+describe(`mkdirp callback test`, () => {
+  it(`should create directories recursively`, function (done) {
+
+    const pathName = '1/3/3/4/5/8'
+    mkdirp(pathName, (err) => {
+      if (err) {
+        return done(err)
+      }
+      done()
+      console.log('Please, remove next folder manually: ' + pathName)
+    })
   })
 })
