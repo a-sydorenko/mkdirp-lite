@@ -1,0 +1,24 @@
+{
+  "name": "mkdirp-lite",
+  "version": "1.0.0",
+  "description": "async mkdirp nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a-sydorenko/mkdirp-lite.git"
+  },
+  "keywords": [
+    "mkdir",
+    "mkdirp",
+    "async"
+  ],
+  "author": "Alex Sydorenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-sydorenko/mkdirp-lite/issues"
+  },
+  "homepage": "https://github.com/a-sydorenko/mkdirp-lite#readme"
+}
